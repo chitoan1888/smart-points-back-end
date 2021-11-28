@@ -27,12 +27,6 @@ SECRET_KEY = 'django-insecure-2=h-e%f#@#&r_s*)6ej7ow3^u)+9=17op)n2hkubtu(b49i5oc
 DEBUG = True
 
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOWED_ORIGINS = [
-    "https://smart-points-kappa.vercel.app",
-    "http://localhost:8080",
-    "http://localhost:3000",
-    "http://127.0.0.1:9000",
-]
 ALLOWED_HOSTS = ['*']
 
 
@@ -74,7 +68,6 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    'smartpoint.middleware.open_access_middleware',
 ]
 
 

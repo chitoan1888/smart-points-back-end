@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-2=h-e%f#@#&r_s*)6ej7ow3^u)+9=17op)n2hkubtu(b49i5oc
 DEBUG = True
 
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOWED_ORIGINS = ['*']
 ALLOWED_HOSTS = ['*']
 
 
@@ -69,6 +70,8 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
+
+
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 

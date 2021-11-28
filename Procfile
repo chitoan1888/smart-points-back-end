@@ -1,0 +1,1 @@
+web: gunicorn smartpoint.wsgi --log-file -
